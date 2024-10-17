@@ -13,19 +13,19 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Hooks {
-
+	
 	public static WebDriver driver;
-
-	public static ExtentReports report = new ExtentReports("HtmlResults.html", false);
+	
+	public static ExtentReports report = new ExtentReports("HtmlResults.html",false) ;
 	public static ExtentTest test;
-
+	
 	@Before
 	public void SetUp(Scenario scenario) {
-
+		
 		test = report.startTest(scenario.getName());
 		driver = new ChromeDriver();
 	}
-
+	
 	@After
 	public void TearDown() {
 		driver.quit();

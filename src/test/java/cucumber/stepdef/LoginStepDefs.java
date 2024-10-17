@@ -1,4 +1,4 @@
-package stepdefs;
+package cucumber.stepdef;
 
 import java.time.Duration;
 import java.util.List;
@@ -15,7 +15,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class SimplilearnLoginDefs {
+public class LoginStepDefs {
 	
 	WebDriver driver = Hooks.driver;
 	
@@ -32,6 +32,7 @@ public class SimplilearnLoginDefs {
 
 	@Given("I click on the Login link")
 	public void i_click_on_the_Login_link() {
+	    // Write code here that turns the phrase above into concrete actions
 		WebElement LoginLink = driver.findElement(By.linkText("Log in"));
 		LoginLink.click();
 		Hooks.test.log(LogStatus.PASS, "Clicked on Login Link");
@@ -97,4 +98,3 @@ public class SimplilearnLoginDefs {
 
 
 }
-

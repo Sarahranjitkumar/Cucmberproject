@@ -1,4 +1,4 @@
-package stepdefs;
+package cucumber.stepdef;
 
 import org.junit.Assert;
 
@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class StringOperationStepdefs {
+public class StringOperationsStepDefs {
 	
 	String name1;
 	String name2;
@@ -44,9 +44,8 @@ public class StringOperationStepdefs {
 	    
 		Assert.assertEquals(expResult, actResult);
 	}
-	
+
+
+
+
 }
-
-
-
-
