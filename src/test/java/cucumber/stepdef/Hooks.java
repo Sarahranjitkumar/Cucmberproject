@@ -1,4 +1,4 @@
-package stepdefs;
+package cucumber.stepdef;
 
 import java.time.Duration;
 
